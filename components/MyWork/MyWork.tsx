@@ -1,8 +1,7 @@
 import React from 'react'
 import Button from '../Button/Button'
 import Link from "next/link";
-//@ts-ignore
-import {Zoom} from "react-reveal"
+import 'animate.css';
 
 
 const MyWork: React.FC = () => {
@@ -16,11 +15,11 @@ const MyWork: React.FC = () => {
                 <br />
                 <div className="w-full h-full animate-zoom">
                     <Link href="/projects">
-                        <Zoom>
+                        <div className="animate__animated animate__zoomIn">
                 <Button>
                     Explore
                 </Button>
-                        </Zoom>
+                        </div>
                     </Link>
                 </div>
             </div>
@@ -31,11 +30,12 @@ const MyWork: React.FC = () => {
                 <br />
                 <div className="w-full h-full animate-zoom">
                     <Link href="/products">
-                        <Zoom>
+                        <div className="animate__animated animate__zoomIn">
                 <Button>
                     Explore
                 </Button>
-                        </Zoom>
+                        </div>
+
 
                     </Link>
                 </div>

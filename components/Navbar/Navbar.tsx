@@ -42,11 +42,10 @@ const Navbar: React.FC = () => {
                 <div onClick={() => setOpen(!open)} className='text-3xl text-white absolute right-8 top-6 cursor-pointer md:hidden'>
                     <FontAwesomeIcon icon={faBars} />
                 </div>
-
                 <ul className={`logo md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#1D1C1C] text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
-                    <li className='md:ml-8 text-xl md:my-0 my-7'> <Link href="/" className='text-white hover:text-gray-400 duration-500'>{homeRef}</Link> </li>
-                    <li className='md:ml-8 text-xl md:my-0 my-7'> <Link href="/about" className='text-white hover:text-gray-400 duration-500'>{aboutRef}</Link> </li>
-                    <div className="flex relative justify-center mr-[580px] md:mr-0 items-center" onClick={handleDropDown}>
+                    <li className='md:ml-8 text-xl md:mb-0 mb-3 md:my-0 my-7'> <Link href="/" className='text-white hover:text-gray-400 duration-500'>{homeRef}</Link> </li>
+                    <li className='md:ml-8 text-xl md:my-7 my-0'> <Link href="/about" className='text-white hover:text-gray-400 duration-500'>{aboutRef}</Link> </li>
+                    <div className="flex absolute left-4  bottom-6 md:bottom-0  md:relative justify-center  md:mr-0 items-center" onClick={handleDropDown}>
                         <li className='md:ml-8 text-xl md:my-0 my-7 px-4'>
                             <p className='text-white hover:text-gray-400 duration-500 cursor-pointer'>{usePath === "projects" ? projectRef : productRef}</p>
                         </li>
@@ -65,7 +64,7 @@ const Navbar: React.FC = () => {
                         }
 
                     </div>
-                    <li className='md:ml-8 text-xl md:my-0 my-7'> <Link href="/contact" className='text-white hover:text-gray-400 duration-500'>{contactRef}</Link> </li>
+                    <li className='md:ml-8 text-xl md:mt-0 mt-2 md:my-0 my-12'> <Link href="/contact" className='text-white hover:text-gray-400 duration-500'>{contactRef}</Link> </li>
                 </ul>
             </div>
         </div>
