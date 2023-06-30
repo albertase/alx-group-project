@@ -22,7 +22,7 @@ const Slide: React.FC = () => {
         <div className="bg-gray-100">
             <h1 className="Zilla_Slab text-[48px] leading-[50.4px] pt-40 text-[#1D1C1C] pl-12">Articles</h1>
             <div className='relative flex flex-nowrap items-center bg-gray-100 pl-6
-            whitespace-nowrap scroll-smooth overflow-x-hidden w-full h-full' ref={sliderRef}>
+            whitespace-nowrap scroll-smooth overflow-x-scroll sco scrollbar-hidden md:overflow-x-hidden w-full h-full' ref={sliderRef}>
                 {data.map((item: any, index:number) => (
                 <div key={index} className="w-96 p-8">
                     <img
