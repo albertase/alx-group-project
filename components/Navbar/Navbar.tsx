@@ -13,6 +13,7 @@ const Navbar: React.FC = () => {
     const [open, setOpen] = useState(false);
     const [drop, setDrop] = useState(false);
     const usePath: string = usePathname()
+    const [modal, setModal] = useState(false);
 
 
 
@@ -23,13 +24,27 @@ const Navbar: React.FC = () => {
     const productRef: React.JSX.Element = <Link href="/products" className={usePath === '/products' ? 'non-active' : 'active'}>My Works</Link>
     const contactRef: React.JSX.Element = <Link href="/contact" className={usePath === '/contact' ? 'non-active' : 'active'}>Contact</Link>
 
+
+
+    const toggleModal = () => {
+        setModal(!modal);
+    };
+
+    if(modal) {
+        document.body.classList.add('active-modal')
+    } else {
+        document.body.classList.remove('active-modal')
+    }
+
     const handleDropDown = (): void => {
         setDrop(prevDrop => !prevDrop);
+        toggleModal()
     }
+
     return (
         <div className='shadow-md w-full fixed top-0 left-0 z-10'>
             <div className='md:flex items-center justify-between bg-[#1D1C1C] py-4 md:px-10 px-7'>
-                <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+                <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins]
       text-gray-800'>
                     <span className='text-3xl text-indigo-600 mr-1 pt-2'>
                         <Link href="/">
@@ -49,20 +64,25 @@ const Navbar: React.FC = () => {
                         <li className='md:ml-8 text-xl md:my-0 my-7 px-4'>
                             <p className='text-white hover:text-gray-400 duration-500 cursor-pointer'>{usePath === "projects" ? projectRef : productRef}</p>
                         </li>
-                        <span>
-                            {drop &&
+                        <span className="cursor-pointer">
+                            {!drop &&
                                 <FontAwesomeIcon icon={faCaretDown}  />
                             }
                         </span>
                         {drop &&
-                            <div className="absolute top-full w-max bg-white shadow-md rounded">
-                                <ul className="text-left border rounded">
-                                    <li className="px-4 py-1 md:text-2xl text-black border hover:bg-gray-100"><Link href="/projects">Projects</Link> </li>
-                                    <li className="px-4 py-1 md:text-2xl text-black  border hover:bg-gray-100"><Link href="/products">Products</Link> </li>
-                                </ul>
+                            <div className="modal">
+                                <div className="overlay"></div>
+                                <div className="modal-content">
+                                    <div className="absolute top-full w-max bg-white shadow-md rounded">
+                                        <ul className="text-left border rounded">
+                                            <li className="px-4 py-1 md:text-2xl text-black border hover:bg-gray-100"><Link href="/projects">Projects</Link> </li>
+                                            <li className="px-4 py-1 md:text-2xl text-black  border hover:bg-gray-100"><Link href="/products">Products</Link> </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
                             </div>
                         }
-
                     </div>
                     <li className='md:ml-8 text-xl md:mt-0 mt-2 md:my-0 my-12'> <Link href="/contact" className='text-white hover:text-gray-400 duration-500'>{contactRef}</Link> </li>
                 </ul>
