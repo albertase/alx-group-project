@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const Button: FC<ButtonProps> = ({ children }) => {
   return (
-    <button className='bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 duration-500'>
+    <button className='bg-[#585151] text-white font-[Poppins] p-2 md:py-3 md:px-7 rounded md:mr-[8px] hover:bg-[#585150] duration-500'>
       {children}
     </button>
   );

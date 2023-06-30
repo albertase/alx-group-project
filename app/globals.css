@@ -31,15 +31,92 @@ body {
   font-weight: 400;
 }
 
+.Zilla_change {
+  font-family: Zilla Slab;
+  font-weight: 400;
+}
+
 .Montserrat {
   font-family: Montserrat;
   font-weight: 400;
 }
 
+.Montserrat_h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.Montserrat_contact {
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.Zilla_Slab_h1 {
+  font-family: Zilla Slab;
+  font-weight: 700;
+}
+
+.Zilla_Slab_contact {
+  font-family: Zilla Slab;
+  font-weight: 600;
+}
+
+.Zilla_Slab_700 {
+  font-family: Zilla Slab;
+  font-weight: 700;
+}
+
 @media (max-width: 1362px) and (min-width: 768px) {
-  .Zilla_Slab {
+  .Zilla_change {
     color: white;
   }
+  /*.Montserrat {*/
+  /*  font-size: 10px;*/
+  /*  line-height: 10px;*/
+  /*}*/
+  .full {
+    width: 100vw;
+  }
+  .rap {
+    flex-wrap: nowrap;
+  }
+
+}
+
+.logo a.non-active {
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 9px;
+  color: #ffffff;
+}
+
+
+
+
+.animate-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes zoomOutAndIn {
+  0% {
+    transform: scale(0.1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}
+
+.zoom:hover .animate-zoom {
+  /*animation-play-state: paused;*/
+  animation: zoomOutAndIn 6s infinite;
 }
 
 

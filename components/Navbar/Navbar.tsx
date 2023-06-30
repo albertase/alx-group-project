@@ -1,14 +1,29 @@
-import React, { useState } from 'react'
+'use client'
+import React, {useEffect, useRef, useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import LogoIcon from "@/public/logo.svg"
+import {usePathname} from 'next/navigation'
+import Link from 'next/link';
 
 
-const Navbar = () => {
+
+
+const Navbar: React.FC = () => {
     const [open, setOpen] = useState(false);
     const [drop, setDrop] = useState(false);
+    const usePath: string = usePathname()
 
-    const handleDropDown = () => {
+
+
+    // Active Classes
+    const homeRef:React.JSX.Element = <Link href="/" className={usePath === '/' ? 'non-active' : 'active'}>Home</Link>
+    const aboutRef: React.JSX.Element = <Link href="/about" className={usePath === '/about' ? 'non-active' : 'active'}>About</Link>
+    const projectRef: React.JSX.Element = <Link href="/projects" className={usePath === '/projects' ? 'non-active' : 'active'}>My Works</Link>
+    const productRef: React.JSX.Element = <Link href="/products" className={usePath === '/products' ? 'non-active' : 'active'}>My Works</Link>
+    const contactRef: React.JSX.Element = <Link href="/contact" className={usePath === '/contact' ? 'non-active' : 'active'}>Contact</Link>
+
+    const handleDropDown = (): void => {
         setDrop(prevDrop => !prevDrop);
     }
     return (
@@ -17,7 +32,10 @@ const Navbar = () => {
                 <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800'>
                     <span className='text-3xl text-indigo-600 mr-1 pt-2'>
+                        <Link href="/">
                         <LogoIcon />
+                        </Link>
+
                     </span>
                 </div>
 
@@ -25,11 +43,13 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} />
                 </div>
 
-                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#1D1C1C] text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
-                    <li className='md:ml-8 text-xl md:my-0 my-7'> <a href="/" className='text-white hover:text-gray-400 duration-500'>Home</a> </li>
-                    <li className='md:ml-8 text-xl md:my-0 my-7'> <a href="/" className='text-white hover:text-gray-400 duration-500'>About</a> </li>
-                    <div className="flex relative justify-center items-center" onClick={handleDropDown}>
-                        <li className='md:ml-8 text-xl md:my-0 my-7 px-4'> <p className='text-white hover:text-gray-400 duration-500 cursor-pointer'>My Works</p> </li>
+                <ul className={`logo md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#1D1C1C] text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+                    <li className='md:ml-8 text-xl md:my-0 my-7'> <Link href="/" className='text-white hover:text-gray-400 duration-500'>{homeRef}</Link> </li>
+                    <li className='md:ml-8 text-xl md:my-0 my-7'> <Link href="/about" className='text-white hover:text-gray-400 duration-500'>{aboutRef}</Link> </li>
+                    <div className="flex relative justify-center mr-[580px] md:mr-0 items-center" onClick={handleDropDown}>
+                        <li className='md:ml-8 text-xl md:my-0 my-7 px-4'>
+                            <p className='text-white hover:text-gray-400 duration-500 cursor-pointer'>{usePath === "projects" ? projectRef : productRef}</p>
+                        </li>
                         <span>
                             {drop &&
                                 <FontAwesomeIcon icon={faCaretDown}  />
@@ -38,14 +58,14 @@ const Navbar = () => {
                         {drop &&
                             <div className="absolute top-full w-max bg-white shadow-md rounded">
                                 <ul className="text-left border rounded">
-                                    <li className="px-4 py-1 text-black border hover:bg-gray-100"><a href="/">Projects</a> </li>
-                                    <li className="px-4 py-1 text-black  border hover:bg-gray-100"><a href="/">Products</a> </li>
+                                    <li className="px-4 py-1 md:text-2xl text-black border hover:bg-gray-100"><Link href="/projects">Projects</Link> </li>
+                                    <li className="px-4 py-1 md:text-2xl text-black  border hover:bg-gray-100"><Link href="/products">Products</Link> </li>
                                 </ul>
                             </div>
                         }
 
                     </div>
-                    <li className='md:ml-8 text-xl md:my-0 my-7'> <a href="/" className='text-white hover:text-gray-400 duration-500'>Contact</a> </li>
+                    <li className='md:ml-8 text-xl md:my-0 my-7'> <Link href="/contact" className='text-white hover:text-gray-400 duration-500'>{contactRef}</Link> </li>
                 </ul>
             </div>
         </div>
