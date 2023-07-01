@@ -16,9 +16,9 @@ const MyWork: React.FC = () => {
                 <div className="w-full h-full animate-zoom">
                     <Link href="/projects">
                         <div className="animate__animated animate__zoomIn">
-                <Button>
-                    Explore
-                </Button>
+                            <Button>
+                                Explore
+                            </Button>
                         </div>
                     </Link>
                 </div>
@@ -31,9 +31,9 @@ const MyWork: React.FC = () => {
                 <div className="w-full h-full animate-zoom">
                     <Link href="/products">
                         <div className="animate__animated animate__zoomIn">
-                <Button>
-                    Explore
-                </Button>
+                            <Button>
+                                Explore
+                            </Button>
                         </div>
 
 

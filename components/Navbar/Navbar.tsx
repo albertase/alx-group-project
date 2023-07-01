@@ -30,12 +30,6 @@ const Navbar: React.FC = () => {
         setModal(!modal);
     };
 
-    if(modal) {
-        document.body.classList.add('active-modal')
-    } else {
-        document.body.classList.remove('active-modal')
-    }
-
     const handleDropDown = (): void => {
         setDrop(prevDrop => !prevDrop);
         toggleModal()

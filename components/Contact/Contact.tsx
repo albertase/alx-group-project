@@ -4,7 +4,6 @@ import React, {useState} from "react"
 
 const Contact: React.FC = () => {
 
-
     return (
         <div className='grid bg-gray-100 grid-cols-1 py-24 sm:grid-cols-2 h-full w-full px-8'>
             <div className=''>
@@ -25,7 +24,7 @@ const Contact: React.FC = () => {
                     <img src="/contact_twitter.png" alt="Twitter" className="w-16 h-16 rounded-full"/>
                     <img src="/contact_email.png" alt="Email" className="w-16 h-16 rounded-full"/>
                 </div>
-                <form className='w-full mx-auto rounded-lg bg-gray-100 p-8 px-8'>
+                <form className='w-full mx-auto rounded-lg bg-gray-100 md:p-8 px-8'>
                     <div className='flex flex-col text-gray-400 py-2'>
                         <input className='rounded-lg mt-2 p-6 focus:outline-none border-2 border-[#C3C2D2]'
                                type="text" placeholder="Full Name" />
