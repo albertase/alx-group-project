@@ -10,7 +10,7 @@ const ProfileDetailed: React.FC = () => {
         <div className="raps bg-gray-100 md:flex items-center md:justify-between md:items-center gap-8 md:h-fit">
             <div className="md:w-2/4">
                 <p className='w-full md:leading-20 m-auto Montserrat text-[20px] leading-10 p-3'>
-                    Odemakinde Elisha is a leading Innovative AI Engineer and Research Scientist with professional experience in AI relating to vision analytics. He is a skilled technical Entrepreneur with proven experience in AI app conceptualization design, architectural flow, product development, testing and production level builds of AI systems on GPUs and TPUs. He is building <Link className="bg-[#585151] italic text-white border-b-4 hover:border-blue-700" href="https://rectlabs.com"> Rectlabs Inc,</Link> an AI research and Innovation company based in Nigeria, Africa.
+                    Odemakinde Elisha is a leading Innovative AI Engineer and Research Scientist with professional experience in AI relating to vision analytics. He is a skilled technical Entrepreneur with proven experience in AI app conceptualization design, architectural flow, product development, testing and production level builds of AI systems on GPUs and TPUs. He is building <Link className="bg-[#585151] italic text-white border-b-4 hover:border-blue-700" href="https://rectlabs.com" as="/redirect-page"> Rectlabs Inc,</Link> an AI research and Innovation company based in Nigeria, Africa.
                 </p>
                 <div className='p-3'>
                     <Button>
