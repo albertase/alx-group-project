@@ -6,19 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   background-color: white;
@@ -68,12 +56,15 @@ body {
 
 @media (max-width: 1362px) and (min-width: 768px) {
   .Zilla_change {
-    color: white;
+    color: black;
   }
-  /*.Montserrat {*/
-  /*  font-size: 10px;*/
-  /*  line-height: 10px;*/
-  /*}*/
+  
+  #align_left {
+    top: 545px;
+    left: -0px;
+    font-size: 40px;
+  }
+
   .full {
     width: 100vw;
   }
@@ -115,7 +106,6 @@ body {
 }
 
 .zoom:hover .animate-zoom {
-  /*animation-play-state: paused;*/
   animation: zoomOutAndIn 6s infinite;
 }
 
@@ -149,7 +139,6 @@ body.active-modal {
   right: -7%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
-  /*background: #f1f1f1;*/
   padding: 14px 28px;
   border-radius: 3px;
   max-width: 600px;

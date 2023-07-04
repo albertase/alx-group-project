@@ -1,9 +1,11 @@
 import Image from "next/image";
-import React, {useRef } from 'react';
+import React, {useRef, useState } from 'react';
 import { data } from '../mockData';
+import Button from "@/components/Button/Button";
 
 const Slide: React.FC = () => {
     const sliderRef = useRef<HTMLDivElement | null>(null);
+    const [isReadMore, setIsReadMore] = useState(true);
 
     const slideLeft = (): void => {
         if (sliderRef.current) {
@@ -17,6 +19,9 @@ const Slide: React.FC = () => {
         }
     };
 
+    const toggleReadMore = () => {setIsReadMore(!isReadMore)};
+
+
 
     return (
         <div className="bg-gray-100">
@@ -26,13 +31,17 @@ const Slide: React.FC = () => {
                 {data.map((item: any, index:number) => (
                 <div key={index} className="w-96 p-8">
                     <img
-                        className='w-[400px] inline-block p-2 cursor-pointer hover:scale-105 object-cover ease-in-out duration-300'
+                        className='w-[400px] rounded-[25px] inline-block p-2 cursor-pointer hover:scale-105 object-cover ease-in-out duration-300'
                         src={item.img}
                         alt='Articles'
                     />
-                    <h1 className="Montserrat_h1 text-[20px] leading-[30px] py-3">{item.header}</h1>
-                    {item.slideText}
-                    {item.button}
+                    <p className="Montserrat_h1 text-[20px] leading-[30px] py-3">{item.header}</p>
+                    <p className="whitespace-break-spaces">{item.slideText.slice(0, 100)}</p>
+                    {item.slideText.length > 100 &&
+                        <span className="py-8"><br/>
+                       {item.button}
+                        </span>
+                    }
                 </div>
                 ))}
             </div>

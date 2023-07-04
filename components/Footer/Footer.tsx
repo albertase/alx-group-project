@@ -33,34 +33,34 @@ const Footer: React.FC = () => {
                             </Link>
                         </li>
                     </ul>
-                    <ul className='flex justify-between items-center w-full'>
+                    <ul className='flex justify-between w-full'>
                         <li>
                             <Link href="/contact">
                                 <span className="Montserrat text-[20px] p-2 md:p-0 leading-[24.38px]">Contact</span>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="https://medium.com/@elishatofunmi">
                                 <span className="Montserrat text-[20px] p-2 md:p-0 leading-[24.38px]">Blog</span>
                             </Link>
                         </li>
-                        <li>
-                            <Link href="/">
-                                <span className="Montserrat text-[20px] p-2 md:p-0 leading-[24.38px]">Hobby</span>
-                            </Link>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <Link href="/">*/}
+                        {/*        <span className="Montserrat text-[20px] p-2 md:p-0 leading-[24.38px]">.</span>*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                     </ul>
                 </div>
                 </div>
                 <div className="flex flex-col gap-3 p-2 w-fit max-[640px]:p-0 max-[640px]:flex-row max-[640px]:gap-5">
                     <div className="flex gap-5">
-                        <Link href="#"><img src="/GitHub.svg" alt="Github"/></Link>
-                        <Link href="#"><img src="/LinkedIn.svg" alt="Linked In"/></Link>
-                        <Link href="#"><img src="/Twitter.svg" alt="Twitter"/></Link>
+                        <Link href="https://github.com/elishatofunmi"><img src="/GitHub.svg" alt="Github"/></Link>
+                        <Link href="https://www.linkedin.com/in/elishatofunmi/"><img src="/LinkedIn.svg" alt="Linked In"/></Link>
+                        <Link href="https://twitter.com/elishatofunmi"><img src="/Twitter.svg" alt="Twitter"/></Link>
                     </div>
                     <div className="flex gap-5">
-                        <Link href="#"><img src="/Instagram.svg" alt="Instagram"/></Link>
-                        <Link href="#"><img src="/YouTube.svg" alt="Youtube"/></Link>
+                        <Link href="https://instagram.com/elishatofunmi"><img src="/Instagram.svg" alt="Instagram"/></Link>
+                        <Link href="https://youtube.com/@elishatofunmi"><img src="/YouTube.svg" alt="Youtube"/></Link>
                     </div>
                 </div>
             </div>
