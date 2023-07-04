@@ -12,9 +12,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <main className="">
-        <Head>
-            <link rel="icon" href="" />
-        </Head>
       <Navbar />
       <div className="mt-32">
         <ProfileImage />
