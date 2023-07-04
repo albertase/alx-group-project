@@ -14,7 +14,7 @@ const About: React.FC = () => {
                         He is a skilled technical Entrepreneur with proven experience in AI
                         app conceptualization design, architectural flow, product
                         development, testing and building production level AI systems on
-                        GPUs and TPUs. He is currently building <Link className="bg-[#585151] italic text-white border-b-4 hover:border-blue-700" href="https://rectlabs.com" as="https://rectlabs.com"> Rectlabs Inc,</Link> an AI based
+                        GPUs and TPUs. He is currently building <Link className="italic" href="https://rectlabs.com" as="https://rectlabs.com"> Rectlabs Inc,</Link> an AI based
                         research / production innovation company based in lagos, Nigeria. <br/><br />
 
                         He is a passionate individual, determined and result oriented engineer
