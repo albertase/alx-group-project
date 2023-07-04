@@ -35,7 +35,7 @@ type Project = {
      {
          id: 3,
          img: '/article3.webp',
-         header: <p className="leading-[28px]">The Story behind Rectvision &  <br/> SynX— Rectlabs Inc Flagship <br/> products, In my  journey as a full-<br/>stack AI engineer,  I have had <br/> the chance of working</p>,
+         header: <p className="leading-[28px]">The Story behind Rectvision &  <br/> SynX— Rectlabs Inc Flagship <br/> products, In my  journey as a full-<br/>stack AI engineer,  I have had <br/> the chance of working...</p>,
          slideText: 'Hi folks, It’s been a long while since I wrote like this, I am pretty much getting back to being ... little more consistent this year. This time around, I just want to share a little bit of my story and why I am building an AI-centered startup within the African space.',
          button: <Link href="https://medium.com/@elishatofunmi/the-story-behind-rectvision-synx-rectlabs-inc-flagship-products-366fe719b52f" as="https://medium.com/@elishatofunmi/the-story-behind-rectvision-synx-rectlabs-inc-flagship-products-366fe719b52f"><Button>Read more</Button></Link>,
      },
