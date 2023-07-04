@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import Link from "next/link";
 
 
 
@@ -7,7 +8,7 @@ const Contact: React.FC = () => {
     return (
         <div className='grid bg-gray-100 grid-cols-1 py-24 sm:grid-cols-2 h-full w-full px-8'>
             <div className=''>
-                <img className='w-full h-auto object-cover' src="/contact_pic.png" alt="Contact Picture" />
+                <img className='w-full h-auto object-cover' src="/mentorship.png" alt="Contact Picture" />
             </div>
 
             <div className='bg-gray-100 flex flex-col justify-center'>
@@ -20,9 +21,16 @@ const Contact: React.FC = () => {
                 </div>
                 <br/>
                 <div className="flex gap-4 px-8">
+                    <Link href="https://www.linkedin.com/in/elishatofunmi/" as="https://www.linkedin.com/in/elishatofunmi/">
                     <img src="/contact_linkedin.png" alt="Linked-in" className="w-16 h-16 rounded-full"/>
+                    </Link>
+                    <Link href="https://twitter.com/elishatofunmi" as="https://twitter.com/elishatofunmi">
                     <img src="/contact_twitter.png" alt="Twitter" className="w-16 h-16 rounded-full"/>
+                    </Link>
+                    <Link href="mailto:elishatofunmi@gmail.com">
                     <img src="/contact_email.png" alt="Email" className="w-16 h-16 rounded-full"/>
+                    </Link>
+
                 </div>
                 <form className='w-full mx-auto rounded-lg bg-gray-100 md:p-8 px-8'>
                     <div className='flex flex-col text-gray-400 py-2'>

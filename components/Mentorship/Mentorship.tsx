@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Mentorship: React.FC = () => {
   return (
@@ -24,9 +25,12 @@ const Mentorship: React.FC = () => {
               for the next billion users.
             </p>
             <div>
+              <Link href="https://calendly.com/elishatofunmi" as="https://calendly.com/elishatofunmi">
               <button className="px-4 py-2.5 text-white rounded-lg bg-[#585151] w-full md:w-auto">
                 Get In Touch
               </button>
+              </Link>
+
             </div>
           </div>
         </div>

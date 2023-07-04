@@ -29,11 +29,14 @@ const Slide: React.FC = () => {
             <div className='relative flex flex-nowrap items-center bg-gray-100 pl-6
             whitespace-nowrap scroll-smooth overflow-x-scroll sco scrollbar-hidden md:overflow-x-hidden w-full h-full' ref={sliderRef}>
                 {data.map((item: any, index:number) => (
-                <div key={index} className="w-96 p-8">
-                    <img
-                        className='w-[400px] rounded-[25px] inline-block p-2 cursor-pointer hover:scale-105 object-cover ease-in-out duration-300'
+                <div key={index} className="w-96 p-8 h-2/3">
+                    <Image
+                        className='w-[400p] rounded-[25px] inline-block p-2 cursor-pointer hover:scale-105 object-cove ease-in-out duration-300'
+                        width={400}
+                        height={100}
                         src={item.img}
                         alt='Articles'
+                        priority
                     />
                     <p className="Montserrat_h1 text-[20px] leading-[30px] py-3">{item.header}</p>
                     <p className="whitespace-break-spaces">{item.slideText.slice(0, 100)}</p>

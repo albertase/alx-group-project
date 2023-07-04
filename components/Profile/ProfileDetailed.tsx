@@ -13,9 +13,13 @@ const ProfileDetailed: React.FC = () => {
                     Odemakinde Elisha is a leading Innovative AI Engineer and Research Scientist with professional experience in AI relating to vision analytics. He is a skilled technical Entrepreneur with proven experience in AI app conceptualization design, architectural flow, product development, testing and production level builds of AI systems on GPUs and TPUs. He is building <Link className="italic " href="https://rectlabs.com" as="https://rectlabs.com"> Rectlabs Inc,</Link> an AI research and Innovation company based in Nigeria, Africa.
                 </p>
                 <div className='p-3'>
+                    <Link href="/about">
+
                     <Button>
                         Read more
                     </Button>
+                    </Link>
+
                 </div>
 
             </div>

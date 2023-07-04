@@ -9,13 +9,13 @@ const MyWork: React.FC = () => {
         <div className="bg-[#1D1C1C] relative p-[98px] flex flex-col gap-10 md:flex-row md:gap-4 md:flex-wrap md:justify-around w-full">
             <h1 className="text-white Zilla_Slab text-[20px] md:text-[48px] absolute left-32 top-6 leading-[50.4px]">My Works</h1>
             <div className="p-[60px] pl-8 zoom  md:p-[60px] md:py-24 md:px-52 bg-[#E0D5DD] rounded text-center">
-                <p className="text-center md:text-[28px] animate-zoom">Projects</p>
+                <p className="text-center md:text-[28px] animate-zoom ml-6 md:ml-0">Projects</p>
                 <br />
                 <br />
                 <br />
                 <div className="w-full h-full animate-zoom">
                     <Link href="/projects">
-                        <div className="animate__animated animate__zoomIn">
+                        <div className="animate__animated animate__zoomIn ml-6 md:ml-0">
                             <Button>
                                 Explore
                             </Button>
@@ -24,13 +24,13 @@ const MyWork: React.FC = () => {
                 </div>
             </div>
             <div className="p-[60px] pl-8 zoom md:p-[60px] md:py-24 md:px-52 bg-[#E0D5DD] rounded text-center">
-                <p className="text-center md:text-[28px] animate-zoom">Products</p>
+                <p className="text-center md:text-[28px] ml-5 md:ml-0 animate-zoom">Products</p>
                 <br />
                 <br />
                 <br />
                 <div className="w-full h-full animate-zoom">
                     <Link href="/products">
-                        <div className="animate__animated animate__zoomIn">
+                        <div className="animate__animated animate__zoomIn ml-5 md:ml-0">
                             <Button>
                                 Explore
                             </Button>

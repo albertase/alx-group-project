@@ -60,7 +60,7 @@ body {
   }
   
   #align_left {
-    top: 545px;
+    top: 445px;
     left: -0px;
     font-size: 40px;
   }
@@ -156,7 +156,6 @@ body.active-modal {
   .modal-content {
     top: 28%;
     left: 37%;
-
   }
 }
 
