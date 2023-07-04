@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://medium.com/@elishatofunmi" as="/redirect-page">
+                            <Link href="https://medium.com/@elishatofunmi" as="https://medium.com/@elishatofunmi">
                                 <span className="Montserrat text-[20px] p-2 md:p-0 leading-[24.38px]">Blog</span>
                             </Link>
                         </li>
@@ -49,13 +49,13 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex flex-col gap-3 p-2 w-fit max-[640px]:p-0 max-[640px]:flex-row max-[640px]:gap-5">
                     <div className="flex gap-5">
-                        <Link href="https://github.com/elishatofunmi" as="/redirect-page"><img src="/GitHub.svg" alt="Github"/></Link>
-                        <Link href="https://www.linkedin.com/in/elishatofunmi/" as="/redirect-page"><img src="/LinkedIn.svg" alt="Linked In"/></Link>
-                        <Link href="https://twitter.com/elishatofunmi" as="/redirect-page"><img src="/Twitter.svg" alt="Twitter"/></Link>
+                        <Link href="https://github.com/elishatofunmi" as="https://github.com/elishatofunmi"><img src="/GitHub.svg" alt="Github"/></Link>
+                        <Link href="https://www.linkedin.com/in/elishatofunmi/" as="https://www.linkedin.com/in/elishatofunmi/"><img src="/LinkedIn.svg" alt="Linked In"/></Link>
+                        <Link href="https://twitter.com/elishatofunmi" as="https://twitter.com/elishatofunmi"><img src="/Twitter.svg" alt="Twitter"/></Link>
                     </div>
                     <div className="flex gap-5">
-                        <Link href="https://instagram.com/elishatofunmi" as="/redirect-page"><img src="/Instagram.svg" alt="Instagram"/></Link>
-                        <Link href="https://youtube.com/@elishatofunmi" as="/redirect-page"><img src="/YouTube.svg" alt="Youtube"/></Link>
+                        <Link href="https://instagram.com/elishatofunmi" as="https://instagram.com/elishatofunmi"><img src="/Instagram.svg" alt="Instagram"/></Link>
+                        <Link href="https://youtube.com/@elishatofunmi" as="https://youtube.com/@elishatofunmi"><img src="/YouTube.svg" alt="Youtube"/></Link>
                     </div>
                 </div>
             </div>
