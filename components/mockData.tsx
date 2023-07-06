@@ -105,7 +105,7 @@ type Project = {
      {
          id: 13,
          img: '/article13.webp',
-         header: <p className="text-[21px] leading-[23px]">Overcoming overfitting in image <br/> classification using data augme...</p>,
+         header: <p className="text-[21px] leading-[21px]">Overcoming overfitting in image <br/> classification using data augme...</p>,
          slideText: 'Imagine you have trained an image classification model whose performance seems a bit poor—did you... know there’s more you can d',
          button: <Link href="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986" as="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986"><Button>Read more</Button></Link>,
      },
@@ -161,7 +161,7 @@ type Project = {
      {
          id: 21,
          img: '/article21.webp',
-         header: <p className="leading-[25px]">Baseline Titanic challenge Solu<br/> tion (from decision to prediction)</p>,
+         header: <p className="leading-[23px]">Baseline Titanic challenge Solu<br/> tion (from decision to prediction)</p>,
          slideText: 'Data Description/ Overview The titanic challenge competition is a simple use of machine learning... to create a model that predicts which',
          button: <Link href="https://medium.com/@elishatofunmi/baseline-titanic-challenge-solution-from-decision-to-prediction-e39a735a36cf" as="https://medium.com/@elishatofunmi/baseline-titanic-challenge-solution-from-decision-to-prediction-e39a735a36cf"><Button>Read more</Button></Link>,
      },
