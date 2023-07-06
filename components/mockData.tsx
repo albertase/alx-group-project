@@ -70,7 +70,7 @@ type Project = {
      {
          id: 8,
          img: '/article8.webp',
-         header: <>End-to-end Object Detection <br/> Using EfficientDet on Raspberry <br/> Pi 3 (Part 2)</>,
+         header: <p className="leading-[29px]">End-to-end Object Detection <br/> Using EfficientDet on Raspberry <br/> Pi 3 (Part 2)</p>,
          slideText: 'Hi there! This is the 2nd part of a 3-part series on building and deploying a custom object detec... model to a Raspberry Pi 3. To get',
          button: <Link href="https://medium.com/cometheartbeat/end-to-end-object-detection-using-efficientdet-on-raspberry-pi-3-part-2-bb5133646630" as="https://medium.com/cometheartbeat/end-to-end-object-detection-using-efficientdet-on-raspberry-pi-3-part-2-bb5133646630"><Button>Read more</Button></Link>,
      },
@@ -98,14 +98,14 @@ type Project = {
      {
          id: 12,
          img: '/article12.webp',
-         header: <p className="leading-[25px]">Filters as an image processing <br/> tool — part 1</p>,
+         header: <p className="leading-[22px]">Filters as an image processing <br/> tool — part 1</p>,
          slideText: 'Introduction Image processing is a fundamental field in the aspect of computer visioning and its ...ely concerned with giving machines the ability to understand images. There are images we do really want',
          button: <Link href="https://medium.com/analytics-vidhya/filters-as-an-image-processing-tool-part-1-1700a925c105" as="https://medium.com/analytics-vidhya/filters-as-an-image-processing-tool-part-1-1700a925c105"><Button>Read more</Button></Link>,
      },
      {
          id: 13,
          img: '/article13.webp',
-         header: <p className="text-[21px] leading-[21px]">Overcoming overfitting in image <br/> classification using data augme...</p>,
+         header: <p className="text-[20px] leading-[21px]">Overcoming overfitting in image <br/> classification using data augme...</p>,
          slideText: 'Imagine you have trained an image classification model whose performance seems a bit poor—did you... know there’s more you can d',
          button: <Link href="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986" as="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986"><Button>Read more</Button></Link>,
      },
@@ -119,14 +119,14 @@ type Project = {
      {
          id: 15,
          img: '/article15.webp',
-         header: <p className=" text-[20px] leading-[26px]">Transfer Functions for Machine <br/> Learning, Simplified</p>,
+         header: <p className=" text-[20px] leading-[24px]">Transfer Functions for Machine <br/> Learning, Simplified</p>,
          slideText: 'Introduction to Transfer Functions This write up is an excerpt from my recent research on transf... functions and machine learning operations. Throughout this post, I’ll basically be establishing the core',
          button: <Link href="https://medium.com/cometheartbeat/transfer-functions-for-machine-learning-simplified-eff2fddd133b" as="https://medium.com/cometheartbeat/transfer-functions-for-machine-learning-simplified-eff2fddd133b"><Button>Read more</Button></Link>,
      },
      {
          id: 16,
          img: '/article16.webp',
-         header: <p className="leading-[23px]">Low level TensorFlow for classifi <br/>cation problems (Titanic).</p>,
+         header: <p className="text-[19px] leading-[21px]">Low level TensorFlow for classifi <br/>cation problems (Titanic).</p>,
          slideText: 'Hello everyone, I wanna believe you have been finding the series on TensorFlow useful. Check out... previous articles on fundamentals ',
          button: <Link href="https://medium.com/@elishatofunmi/low-level-tensorflow-for-classification-problems-titanic-2a56f3255ff0" as="https://medium.com/@elishatofunmi/low-level-tensorflow-for-classification-problems-titanic-2a56f3255ff0"><Button>Read more</Button></Link>,
      },
@@ -134,7 +134,7 @@ type Project = {
          id: 17,
          img: '/article17.webp',
          header: <p className="leading-[26px]">Low level TensorFlow for regre...</p>,
-         slideText: 'HHello everyone, I wanna believe you have been finding my articles useful for your programming ex...ises, on Fundamentals of',
+         slideText: 'Hello everyone, I wanna believe you have been finding my articles useful for your programming ex...ises, on Fundamentals of',
          button: <Link href="https://medium.com/@elishatofunmi/low-level-tensorflow-for-regression-problems-house-pricing-63cf0785a59" as="https://medium.com/@elishatofunmi/low-level-tensorflow-for-regression-problems-house-pricing-63cf0785a59"><Button>Read more</Button></Link>,
      },
      {
@@ -154,14 +154,14 @@ type Project = {
      {
          id: 20,
          img: '/article20.webp',
-         header: <p className=" text-[18px] leading-[23px]">Definition of machine intellige <br/>nce in simple terms with respect <br/> to nature</p>,
+         header: <p className=" text-[18px] leading-[22px]">Definition of machine intellige <br/>nce in simple terms with respect <br/> to nature</p>,
          slideText: 'There has been so many discussions regarding the conceptual knowledge of what Artificial intellig... (AI) is all about. Let me star',
          button: <Link href="https://medium.com/@elishatofunmi/definition-of-machine-intelligence-in-simple-terms-with-respect-to-nature-6600988af795" as="https://medium.com/@elishatofunmi/definition-of-machine-intelligence-in-simple-terms-with-respect-to-nature-6600988af795"><Button>Read more</Button></Link>,
      },
      {
          id: 21,
          img: '/article21.webp',
-         header: <p className="leading-[23px]">Baseline Titanic challenge Solu<br/> tion (from decision to prediction)</p>,
+         header: <p className=" text-[19px] leading-[22px]">Baseline Titanic challenge Solu<br/> tion (from decision to prediction)</p>,
          slideText: 'Data Description/ Overview The titanic challenge competition is a simple use of machine learning... to create a model that predicts which',
          button: <Link href="https://medium.com/@elishatofunmi/baseline-titanic-challenge-solution-from-decision-to-prediction-e39a735a36cf" as="https://medium.com/@elishatofunmi/baseline-titanic-challenge-solution-from-decision-to-prediction-e39a735a36cf"><Button>Read more</Button></Link>,
      },
