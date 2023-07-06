@@ -21,7 +21,7 @@ type Project = {
     {
         id: 1,
         img: '/article1.webp',
-        header: <p className="text-[20px] leading-[24px]">Trackus — Coach 10x better,<br />formulating better winning...</p>,
+        header: <p className="text-[20px] leading-[26px]">Trackus — Coach 10x better,<br />formulating better winning...</p>,
         slideText: 'In today’s episode of football, we will be talking about how Trackus, helps coaches coach 10 time...etter than their usual selves. First and foremost, introducing Trackus, Trackus is an AI that generates actionable insights (from tracking and event data) in sports games. In more context, this AI watches sports games and generates tactical analytics, player chances,',
         button: <Link href="https://medium.com/@elishatofunmi/trackus-coach-10x-better-formulating-better-winning-strategies-with-ai-292081cbfb27" as="https://medium.com/@elishatofunmi/trackus-coach-10x-better-formulating-better-winning-strategies-with-ai-292081cbfb27"><Button>Read more</Button></Link>,
     },
