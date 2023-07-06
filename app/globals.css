@@ -70,6 +70,7 @@ body {
   }
   .rap {
     flex-wrap: nowrap;
+    color: #542503;
   }
 
 }
