@@ -7,6 +7,9 @@ const About: React.FC = () => {
         <div className="h-full">
             <h1 className="text-center pt-28 md:pt-52 text-[#000000] Zilla_Slab sm:text-[40px] md:text-[58px] leading-[70px]">ELISHA ODEMAKINDE</h1>
             <div className="flex flex-col flex-wrap gap-12 rap p-8 md:flex-row md:flex-nowrap">
+                <div className="bg-[#E0D5DD] w-full h-fit p-1 text-center">
+                    <img src="/about.JPG" alt="About Elisha" className="m-auto"/>
+                </div>
                 <div className=" md:h-[755px] break-words w-full md:pl-12 overflow-x-hidden"> <br/><br/><br/>
                     <p className="Montserrat text-[#1D1C1C] break-words w-full text-[20px] md:text-[18px] md:leading-[44.98px]">
                         Odemakinde Elisha is a leading Innovative AI Engineer and Research
@@ -24,9 +27,6 @@ const About: React.FC = () => {
                         data scientist, ML/AI Engineers and deep learning engineers during
                         his undergraduate days and still in the business of raising and
                         equipping more talents.</p>
-                </div>
-                <div className="bg-[#E0D5DD] w-full h-fit p-1 text-center">
-                    <img src="/about.JPG" alt="About Elisha" className="m-auto"/>
                 </div>
             </div>
         </div>

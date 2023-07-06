@@ -35,7 +35,7 @@ type Project = {
      {
          id: 3,
          img: '/article3.webp',
-         header: <p className="leading-[28px]">The Story behind Rectvision &  <br/> SynX— Rectlabs Inc Flagship <br/> products, In my  journey as a full-<br/>stack AI engineer,  I have had <br/> the chance of working...</p>,
+         header: <p className="leading-[33px]">The Story behind Rectvision &  <br/> SynX— Rectlabs Inc Flagship <br/> products, In my  journey as a full-<br/>stack AI engineer.</p>,
          slideText: 'Hi folks, It’s been a long while since I wrote like this, I am pretty much getting back to being ... little more consistent this year. This time around, I just want to share a little bit of my story and why I am building an AI-centered startup within the African space.',
          button: <Link href="https://medium.com/@elishatofunmi/the-story-behind-rectvision-synx-rectlabs-inc-flagship-products-366fe719b52f" as="https://medium.com/@elishatofunmi/the-story-behind-rectvision-synx-rectlabs-inc-flagship-products-366fe719b52f"><Button>Read more</Button></Link>,
      },
@@ -105,7 +105,7 @@ type Project = {
      {
          id: 13,
          img: '/article13.webp',
-         header: <p className="text-[21px] leading-0">Overcoming overfitting in image <br/> classification using data augme...</p>,
+         header: <p className="text-[21px] leading-[23px]">Overcoming overfitting in image <br/> classification using data augme...</p>,
          slideText: 'Imagine you have trained an image classification model whose performance seems a bit poor—did you... know there’s more you can d',
          button: <Link href="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986" as="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986"><Button>Read more</Button></Link>,
      },
@@ -126,21 +126,21 @@ type Project = {
      {
          id: 16,
          img: '/article16.webp',
-         header: <>Low level TensorFlow for classifi <br/>cation problems (Titanic).</>,
+         header: <p className="leading-[23px]">Low level TensorFlow for classifi <br/>cation problems (Titanic).</p>,
          slideText: 'Hello everyone, I wanna believe you have been finding the series on TensorFlow useful. Check out... previous articles on fundamentals ',
          button: <Link href="https://medium.com/@elishatofunmi/low-level-tensorflow-for-classification-problems-titanic-2a56f3255ff0" as="https://medium.com/@elishatofunmi/low-level-tensorflow-for-classification-problems-titanic-2a56f3255ff0"><Button>Read more</Button></Link>,
      },
      {
          id: 17,
          img: '/article17.webp',
-         header: <p className="leading-[25px]">Low level TensorFlow for regre <br/> ssion problems (house pricing).</p>,
+         header: <p className="leading-[26px]">Low level TensorFlow for regre...</p>,
          slideText: 'HHello everyone, I wanna believe you have been finding my articles useful for your programming ex...ises, on Fundamentals of',
          button: <Link href="https://medium.com/@elishatofunmi/low-level-tensorflow-for-regression-problems-house-pricing-63cf0785a59" as="https://medium.com/@elishatofunmi/low-level-tensorflow-for-regression-problems-house-pricing-63cf0785a59"><Button>Read more</Button></Link>,
      },
      {
          id: 18,
          img: '/article18.webp',
-         header: <>Optimizer, losses and activation <br/> functions in fully connected ne <br/>ural networks.</>,
+         header: <p className="leading-[26px]">Optimizer, losses and activation <br/> functions in fully connected ne <br/>ural networks.</p>,
          slideText: 'HEvery neural network built today works on algorithms that are mathematically proven to be the b... solution to a certain problem',
          button: <Link href="https://medium.com/@elishatofunmi/optimizer-losses-and-activation-functions-in-fully-connected-neural-networks-e1958bc66121" as="https://medium.com/@elishatofunmi/optimizer-losses-and-activation-functions-in-fully-connected-neural-networks-e1958bc66121"><Button>Read more</Button></Link>,
      },
@@ -161,7 +161,7 @@ type Project = {
      {
          id: 21,
          img: '/article21.webp',
-         header: <>Baseline Titanic challenge Solu<br/> tion (from decision to prediction)</>,
+         header: <p className="leading-[25px]">Baseline Titanic challenge Solu<br/> tion (from decision to prediction)</p>,
          slideText: 'Data Description/ Overview The titanic challenge competition is a simple use of machine learning... to create a model that predicts which',
          button: <Link href="https://medium.com/@elishatofunmi/baseline-titanic-challenge-solution-from-decision-to-prediction-e39a735a36cf" as="https://medium.com/@elishatofunmi/baseline-titanic-challenge-solution-from-decision-to-prediction-e39a735a36cf"><Button>Read more</Button></Link>,
      },
