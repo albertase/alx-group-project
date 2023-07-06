@@ -41,7 +41,7 @@ const Slide: React.FC = () => {
                     <p className="Montserrat_h1 text-[20px] leading-[30px] py-3">{item.header}</p>
                     <p className="whitespace-break-spaces">{item.slideText.slice(0, 100)}</p>
                     {item.slideText.length > 100 &&
-                        <span className="py-8"><br/>
+                        <span className="py-8 self-start mt-auto"><br/>
                        {item.button}
                         </span>
                     }
