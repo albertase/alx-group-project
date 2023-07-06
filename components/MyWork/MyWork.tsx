@@ -35,8 +35,6 @@ const MyWork: React.FC = () => {
                                 Explore
                             </Button>
                         </div>
-
-
                     </Link>
                 </div>
             </div>

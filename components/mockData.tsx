@@ -21,7 +21,7 @@ type Project = {
     {
         id: 1,
         img: '/article1.webp',
-        header: <p className="text-[20px] leading-[26px]">Trackus — Coach 10x better,<br />formulating better winning...</p>,
+        header: <p className="text-[18.5px] leading-[20px]">Trackus-Coach 10x better, form<br />ulating better winning strategies</p>,
         slideText: 'In today’s episode of football, we will be talking about how Trackus, helps coaches coach 10 time...etter than their usual selves. First and foremost, introducing Trackus, Trackus is an AI that generates actionable insights (from tracking and event data) in sports games. In more context, this AI watches sports games and generates tactical analytics, player chances,',
         button: <Link href="https://medium.com/@elishatofunmi/trackus-coach-10x-better-formulating-better-winning-strategies-with-ai-292081cbfb27" as="https://medium.com/@elishatofunmi/trackus-coach-10x-better-formulating-better-winning-strategies-with-ai-292081cbfb27"><Button>Read more</Button></Link>,
     },
@@ -77,21 +77,21 @@ type Project = {
      {
          id: 9,
          img: '/article9.webp',
-         header: <p className="text-[16px] leading-0">End-to-end object detection <br/> using EfficientDet on Raspberry..</p>,
+         header: <p className="text-[16px] leading-[26px]">End-to-end object detection using<br/> EfficientDet on Raspberry Pi 3 (P1)</p>,
          slideText: 'Computer vision deals with giving computers or machines a visual understanding of the environment...t’s a broad field that could be',
          button: <Link href="https://medium.com/cometheartbeat/end-to-end-object-detection-using-efficientdet-on-raspberry-pi-3-e4a0d3fe895b" as="https://medium.com/cometheartbeat/end-to-end-object-detection-using-efficientdet-on-raspberry-pi-3-e4a0d3fe895b"><Button>Read more</Button></Link>,
      },
      {
          id: 10,
          img: '/article10.webp',
-         header: <p className="text-[16px] leading-0">Utilization of Dask ML Framework <br/> for Fraud Detection —End-to-end...</p>,
+         header: <p className="text-[16px] leading-[24px]">Utilization of Dask ML Framework <br/> for Fraud Detection —End-to-end <br/>Data analytics</p>,
          slideText: 'Introduction Fraudulent activities have become a rampant activity that has aroused a lot of curio... in the financial sector. This has posed a',
          button: <Link href="https://medium.com/towards-artificial-intelligence/utilization-of-dask-ml-framework-for-fraud-detection-end-to-end-data-analytics-310b2f94d897" as="https://medium.com/towards-artificial-intelligence/utilization-of-dask-ml-framework-for-fraud-detection-end-to-end-data-analytics-310b2f94d897"><Button>Read more</Button></Link>,
      },
      {
          id: 11,
          img: '/article11.webp',
-         header: <p className="text-[19px] leading-0">Regularization techniques for <br/> image processing using Tensor...</p>,
+         header: <p className="text-[19px] leading-[26px]">Regularization techniques for im<br/>age processing using TensorFlow</p>,
          slideText: 'In machine learning, our ultimate concern is how best we can model our data for optimal performan... Imagine you’re working with imag',
          button: <Link href="https://medium.com/cometheartbeat/regularization-techniques-for-image-processing-using-tensorflow-56c5b365bc17" as="https://medium.com/cometheartbeat/regularization-techniques-for-image-processing-using-tensorflow-56c5b365bc17"><Button>Read more</Button></Link>,
      },
@@ -105,7 +105,7 @@ type Project = {
      {
          id: 13,
          img: '/article13.webp',
-         header: <p className="text-[20px] leading-[21px]">Overcoming overfitting in image <br/> classification using data augme...</p>,
+         header: <p className="text-[18px] leading-[21px]">Overcoming overfitting in image cl<br/>assification using data augmentation</p>,
          slideText: 'Imagine you have trained an image classification model whose performance seems a bit poor—did you... know there’s more you can d',
          button: <Link href="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986" as="https://medium.com/cometheartbeat/overcoming-overfitting-in-image-classification-using-data-augmentation-9858c5cee986"><Button>Read more</Button></Link>,
      },
@@ -133,7 +133,7 @@ type Project = {
      {
          id: 17,
          img: '/article17.webp',
-         header: <p className="leading-[26px]">Low level TensorFlow for regre...</p>,
+         header: <p className="text-[16.5px] leading-[19px]">Low level TensorFlow for regression <br/> problems (house pricing).</p>,
          slideText: 'Hello everyone, I wanna believe you have been finding my articles useful for your programming ex...ises, on Fundamentals of',
          button: <Link href="https://medium.com/@elishatofunmi/low-level-tensorflow-for-regression-problems-house-pricing-63cf0785a59" as="https://medium.com/@elishatofunmi/low-level-tensorflow-for-regression-problems-house-pricing-63cf0785a59"><Button>Read more</Button></Link>,
      },

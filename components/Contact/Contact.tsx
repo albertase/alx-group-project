@@ -22,13 +22,13 @@ const Contact: React.FC = () => {
                 <br/>
                 <div className="flex gap-4 px-8">
                     <Link href="https://www.linkedin.com/in/elishatofunmi/" as="https://www.linkedin.com/in/elishatofunmi/">
-                    <img src="/contact_linkedin.png" alt="Linked-in" className="w-16 h-16 rounded-full"/>
+                    <img src="/contact_linkedin.png" alt="Linked-in" className="w-10 h-10 rounded-full"/>
                     </Link>
                     <Link href="https://twitter.com/elishatofunmi" as="https://twitter.com/elishatofunmi">
-                    <img src="/contact_twitter.png" alt="Twitter" className="w-16 h-16 rounded-full"/>
+                    <img src="/contact_twitter.png" alt="Twitter" className="w-12 h-12 rounded-full"/>
                     </Link>
                     <Link href="mailto:elishatofunmi@gmail.com">
-                    <img src="/contact_email.png" alt="Email" className="w-16 h-16 rounded-full"/>
+                    <img src="/contact_email.png" alt="Email" className="w-10 h-10 rounded-full"/>
                     </Link>
 
                 </div>

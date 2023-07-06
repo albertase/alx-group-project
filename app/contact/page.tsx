@@ -1,22 +1,33 @@
+'use client'
 import About from "@/components/About/About"
 import Navbar from "@/components/Navbar/Navbar"
 import React from "react"
 import Footer from "@/components/Footer/Footer";
 import NewsLetter from "@/components/NewsLetter/NewsLetter";
 import Contact from "@/components/Contact/Contact";
+import HeadComponent from "@/components/SeoComp/HeadComponent";
 
 
 const Contacts = () => {
+    const pageTitle = "Contact Page";
+    const pageDescription = "This is Contact Page of Odemakinde Elisha's Portfolio";
+    const pageCanonical = "https://elishatofunmi.com/contact";
     return (
         <div>
+            <HeadComponent
+                title={pageTitle}
+                description={pageDescription}
+                canonical={pageCanonical}
+            />
             <Navbar/>
             <br/>
             <br/>
             <br/>
             <Contact/>
-            <NewsLetter/>
+            <div className="md:-mt-36 -mt-20">
+                <NewsLetter/>
+            </div>
             <Footer/>
-
         </div>
     )
 }
