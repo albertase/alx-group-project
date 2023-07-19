@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
                                     <div className="absolute top-full w-max bg-white shadow-md rounded">
                                         <ul className="text-left border rounded">
                                             <li className="px-4 py-1 md:text-2xl text-black border hover:bg-gray-100"><Link href="/projects">Projects</Link> </li>
-                                            <li className="px-4 py-1 md:text-2xl text-black  border hover:bg-gray-100"><Link href="/products">Products</Link> </li>
+                                            <li className="px-4 py-1 md:text-2xl text-black  border hover:bg-gray-100 "><Link href="/products">Products</Link> </li>
                                         </ul>
                                     </div>
 
