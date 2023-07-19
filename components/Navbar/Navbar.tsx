@@ -12,7 +12,7 @@ import Link from 'next/link';
 const Navbar: React.FC = () => {
     const [open, setOpen] = useState(false);
     const [drop, setDrop] = useState(false);
-    const usePath: string = usePathname()
+    const usePath: any = usePathname()
     const [modal, setModal] = useState(false);
 
 
