@@ -147,8 +147,8 @@ const Contact: React.FC = () => {
                         <button className="my-5 py-4 px-20 bg-[#585151] text-white font-semibold rounded-lg"> {isSubmitting ? "Sending..." : "Submit"}</button>
                         <img src="/contact_send.png" alt="" className="absolute top-9 left-40" />
                     </div>
-                    {error && <p className="text-red-500 text-sm mt-2 text-center">{error}</p>}
-                    {success && <p className="text-green-500 text-sm mt-2 text-center">Message sent successfully!</p>}
+                    {error && <p className="text-red-500 text-[20px] mt-2 text-center">{error}</p>}
+                    {success && <p className="text-green-500 text-[20px] mt-2 text-center">Message sent successfully!</p>}
                 </form>
             </div>
         </div>

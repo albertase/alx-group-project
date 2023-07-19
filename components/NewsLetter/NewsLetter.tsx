@@ -7,6 +7,8 @@ const NewsLetter: React.FC = () => {
     const [fullName, setFullName] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
+    const [isSubscribing, setIsSubscribing] = useState(false);
+
 
     const validateEmail = (email: string) => {
         const re = /\S+@\S+\.\S+/;
@@ -20,6 +22,7 @@ const NewsLetter: React.FC = () => {
         }
 
         try {
+            setIsSubscribing(true)
             const payload = {
                 email,
                 full_name: 'none',
@@ -28,6 +31,7 @@ const NewsLetter: React.FC = () => {
                 method: 'POST',
             });
 
+            setIsSubscribing(false)
             console.log({ res });
 
             setFullName('');
@@ -36,6 +40,7 @@ const NewsLetter: React.FC = () => {
             setSuccess(true);
         } catch (error: any) {
             console.error('Error sending message:', error);
+            setIsSubscribing(false)
             if (error instanceof Error && error.message) {
                 try {
                     const errorData = JSON.parse(error.message);
@@ -102,11 +107,11 @@ const NewsLetter: React.FC = () => {
                             onChange={handleFullNameChange}
                         />
                         <button type="submit" className="px-8 py-2 text-white text-[20px] rounded-xl bg-[#585151] md:w-auto">
-                            Subscribe
+                            {isSubscribing ? "Subscribing..." : "Subscribe"}
                         </button>
                     </form>
-                    {error && <p className="text-red-500 text-sm mt-2 text-center">{error}</p>}
-                    {success && <p className="text-green-500 text-sm mt-2 text-center">Subscription successful!</p>}
+                    {error && <p className="text-red-500 text-[20px] mt-2 text-center">{error}</p>}
+                    {success && <p className="text-green-500 text-[20px] mt-2 text-center">Subscription successful!</p>}
                 </div>
             </div>
         </div>
