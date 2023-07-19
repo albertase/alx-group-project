@@ -22,6 +22,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "http-proxy-middleware": "^2.0.6",
     "next": "13.4.7",
     "next-seo": "^6.1.0",
     "next-sitemap": "^4.1.8",
@@ -35,4 +36,3 @@
     "typescript": "5.1.3"
   }
 }
-
