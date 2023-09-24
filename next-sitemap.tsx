@@ -1,10 +1,10 @@
 module.exports = {
-    siteUrl: 'https://elishatofunmi.com/',
+    siteUrl: 'https://albertikechukwu-portfolio.vercel.app/',
     changefreq: 'monthly',
     priority: 1.0,
     exclude: ['/home', '/about', '/products', 'projects', 'contact'],
     robotsTxtOptions: {
-        additionalSitemaps: ['https://elishatofunmi.com/'],
+        additionalSitemaps: ['https://albertikechukwu-portfolio.vercel.app/'],
         rules: [
             {
                 userAgent: '*',
@@ -13,3 +13,5 @@ module.exports = {
         ],
     },
 };
+
+// update
