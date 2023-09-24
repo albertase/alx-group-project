@@ -2,7 +2,8 @@
 import React, {useEffect, useRef, useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import LogoIcon from "@/public/logo.svg"
+// import LogoIcon from "@/public/logo_pn.png"
+import Image from 'next/image';
 import {usePathname} from 'next/navigation'
 import Link from 'next/link';
 
@@ -40,9 +41,10 @@ const Navbar: React.FC = () => {
             <div className='md:flex items-center justify-between bg-[#1D1C1C] py-4 md:px-10 px-7'>
                 <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins]
       text-gray-800'>
-                    <span className='text-3xl text-indigo-600 mr-1 pt-2'>
+                    <span className='text-3xl w-32 text-indigo-600 mr-1 pt-2'>
                         <Link href="/">
-                        <LogoIcon />
+                        <img src="/logo_pn.png" alt="Albert Logo"/>
+                        
                         </Link>
 
                     </span>

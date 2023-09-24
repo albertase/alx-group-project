@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
     return (
         <div className="grid bg-gray-100 grid-cols-1 py-24 sm:grid-cols-2 h-full w-full px-8">
             <div className="">
-                <img className="w-full h-auto object-cover" src="/mentorship.png" alt="Contact Picture" />
+                <img className="w-full h-auto object-cover" src="/contact.jpeg" alt="Contact Picture" />
             </div>
 
             <div className="bg-gray-100 flex flex-col justify-center">
@@ -104,13 +104,13 @@ const Contact: React.FC = () => {
                 </div>
                 <br />
                 <div className="flex gap-4 px-8">
-                    <Link href="https://www.linkedin.com/in/elishatofunmi/" as="https://www.linkedin.com/in/elishatofunmi/">
+                    <Link href="https://www.linkedin.com/in/ukaegbu-albert-86b221208/" as="https://www.linkedin.com/in/ukaegbu-albert-86b221208/">
                         <img src="/contact_linkedin.png" alt="Linked-in" className="w-10 h-10 rounded-full" />
                     </Link>
-                    <Link href="https://twitter.com/elishatofunmi" as="https://twitter.com/elishatofunmi">
+                    <Link href="https://twitter.com/UkaegbuAlbert" as="https://twitter.com/UkaegbuAlbert">
                         <img src="/contact_twitter.png" alt="Twitter" className="w-12 h-12 rounded-full" />
                     </Link>
-                    <Link href="mailto:elishatofunmi@gmail.com">
+                    <Link href="mailto:albertukaegbu@gmail.com">
                         <img src="/contact_email.png" alt="Email" className="w-10 h-10 rounded-full" />
                     </Link>
                 </div>
