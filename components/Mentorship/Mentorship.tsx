@@ -13,7 +13,7 @@ const Mentorship: React.FC = () => {
             src="/mentor.jpeg"
             alt="A man and a woman looking at a computer"
             width={330}
-            height={100}
+            height={80}
             priority
           />
           <div className='flex flex-col gap-2 lg:gap-8 w-[500px] md:h-72 min-h-96'>
@@ -26,7 +26,7 @@ const Mentorship: React.FC = () => {
             for the next billion users.
             </p>
             <div>
-              <Link href="https://calendly.com/elishatofunmi" as="https://calendly.com/elishatofunmi">
+              <Link href="#" as="/">
               <button className="px-4 py-2.5 text-white rounded-lg bg-[#585151] w-full md:w-auto">
                 Get In Touch
               </button>
