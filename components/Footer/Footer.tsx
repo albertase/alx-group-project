@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                 <div className='flex justify-around w-full max-[640px]:flex max-[640px]:justify-between max-[640px]:w-[80%]'>
                 <div className="">
                     <Link href="/">
-                        <div className="w-48">
+                        <div className="w-40">
                             <img src="/logo_pn.png" alt="Footer Logo"/>
                         </div>
                     </Link>

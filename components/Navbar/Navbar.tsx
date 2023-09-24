@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
             <div className='md:flex items-center justify-between bg-[#1D1C1C] py-4 md:px-10 px-7'>
                 <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins]
       text-gray-800'>
-                    <span className='text-3xl w-32 text-indigo-600 mr-1 pt-2'>
+                    <span className='text-3xl w-28 text-indigo-600 mr-1 pt-2'>
                         <Link href="/">
                         <img src="/logo_pn.png" alt="Albert Logo"/>
                         
