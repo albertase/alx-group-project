@@ -11,8 +11,8 @@ import HeadComponent from "@/components/SeoComp/HeadComponent";
 const AboutPage = () => {
 
     const pageTitle = "About Page";
-    const pageDescription = "This is About Page of Odemakinde Elisha's Portfolio";
-    const pageCanonical = "https://elishatofunmi.com/about";
+    const pageDescription = "This is About Page of Ukaegbu Albert's Portfolio";
+    const pageCanonical = "https://albertikechukwu-portfolio.vercel.app/about";
     return (
         <div>
             <HeadComponent

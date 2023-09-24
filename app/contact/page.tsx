@@ -10,8 +10,8 @@ import HeadComponent from "@/components/SeoComp/HeadComponent";
 
 const Contacts = () => {
     const pageTitle = "Contact Page";
-    const pageDescription = "This is Contact Page of Odemakinde Elisha's Portfolio";
-    const pageCanonical = "https://elishatofunmi.com/contact";
+    const pageDescription = "This is Contact Page of Ukaegbu Albert's Portfolio";
+    const pageCanonical = "https://albertikechukwu-portfolio.vercel.app/contact";
     return (
         <div>
             <HeadComponent
